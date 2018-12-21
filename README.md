@@ -1,2 +1,3 @@
 # Avatar
-My Avatar
+
+This is a avatar created with CSS.
