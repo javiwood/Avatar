@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="logo"></div>
+  <div class="profile">
+    <div class="group">
+      <div class="hair"></div>
+      <div class="ear"></div>
+      <div class="ear right"></div>
+      <div class="fringe"></div>
+      <div class="face"></div>
+      <div class="mask"></div>
+      <div class="eye"></div>
+      <div class="eye2"></div>
+      <div class="nose"></div>
+      <div class="mouth">
+        <div class="tongue"></div>
+      </div>
+      <div class="neck"></div>
+      <div class="body">
+<!--         <div class="logo"></div> -->
+      </div>
+    </div>
+  </div>
+</div>
