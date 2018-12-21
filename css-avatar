@@ -1,0 +1,289 @@
+.container,
+.face,
+.hair,
+.nose,
+.ear,
+.neck,
+.body,
+.cape,
+.logo,
+.group,
+.fringe,
+.eye,
+.eye2,
+.profile-card,
+.yes,
+.no,
+.info,
+.tongue,
+.profile-wrap,
+.name,
+.mouth,
+.mask {
+  position: absolute;
+}
+
+body {
+  background: black;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.profile {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border: 2px solid #FFF;
+  overflow: hidden;
+  background: red;
+}
+
+/*
+.logo {
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    width: 230px;
+    height: 3px;
+    left: -6px;
+    background: #FFF;
+  }
+  &:after {
+    top: 200px;
+  }
+}
+*/
+.group {
+  left: -4px;
+}
+
+.face {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  z-index: 20;
+  top: 50px;
+  left: 70px;
+  width: 80px;
+  height: 100px;
+  background: tan;
+}
+
+/*
+.mask {
+  z-index: 999;
+  width: 12px;
+  height: 12px;
+  border-radius: 0 100% 100% 100%;
+  border: 10px solid $green;
+  top: 89px;
+  left: 69px;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+  }
+  &:before {
+    width: 12px;
+    height: 12px;
+    @include border(100%);
+    border: 8px solid $green;
+    left: 42px;
+    top: -8px;
+    border-radius: 100% 0 100% 100%;
+  }
+  &:after {
+    width: 27px;
+    height: 10px;
+    background: $green;
+    top: 5px;
+    left: 19px;
+  }
+}
+*/
+.hair {
+  z-index: 3;
+  top: 30px;
+  left: 58px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: black;
+}
+
+.ear {
+  z-index: 1;
+  top: 86px;
+  left: 58px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: tan;
+}
+.ear:before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: tan;
+}
+
+.ear.right {
+  left: 130px;
+}
+
+.fringe {
+  z-index: 99;
+  top: 30px;
+  left: 65px;
+  width: 80px;
+  height: 50px;
+  background: black;
+  border-radius: 100% 100% 100% 0;
+}
+.fringe:before, .fringe:after {
+  position: absolute;
+  content: '';
+}
+.fringe:before {
+  top: 12px;
+  left: 28px;
+  width: 30px;
+  height: 40px;
+  background: black;
+  border-radius: 100% 100% 100% 0;
+  transform: rotate(-30deg);
+}
+.fringe:after {
+  width: 30px;
+  height: 40px;
+  top: 8px;
+  background: black;
+}
+
+.eye {
+  z-index: 30;
+  top: 100px;
+  left: 85px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.eye:before {
+  position: absolute;
+  content: '';
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.eye2 {
+  z-index: 30;
+  top: 100px;
+  left: 89px;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.eye2:before {
+  position: absolute;
+  content: '';
+  left: 40px;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.nose {
+  z-index: 20;
+  top: 100px;
+  left: 107px;
+  width: 8px;
+  height: 14px;
+  background: tan;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  display: none;
+}
+
+.mouth {
+  z-index: 20;
+  top: 130px;
+  left: 100px;
+  width: 20px;
+  height: 10px;
+  border-radius: 0 0 100px 100px;
+  background: #424B54;
+  overflow: hidden;
+}
+
+.tongue {
+  top: 7px;
+  left: -3px;
+  width: 30px;
+  height: 20px;
+  background: red;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.neck {
+  z-index: 13;
+  width: 30px;
+  height: 30px;
+  background: tan;
+  top: 130px;
+  left: 95px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.body {
+  z-index: 10;
+  top: 150px;
+  left: 60px;
+  width: 100px;
+  height: 150px;
+  background: blue;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
